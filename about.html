@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josfin+sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;
+    1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/91969a903e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
+    <style>
+           
+        
+:root{
+    --primary-color: rgb(11,181,48);
+    --secondary-color: rgba(36,122,55,0.9);
+    --padding:0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+}
+
+    
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+
+body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+    
+    }
+
+html{
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+        .flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .flex-space-around{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btn{
+        border: none;
+        padding: var(--padding);
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: var(--transition);
+    }
+
+    .btn:hover{
+        background-color: var(--secondary-color);
+    }
+
+    .card{
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+        transition: var(--transition);
+        padding: var(--padding);
+    }
+
+
+    .card:hover{
+        box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,1);
+    }
+
+    .hr-design {
+        margin: 0.5rem 0;
+    }
+
+    .dot {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+    }
+  
+   
+    .text-center {
+        text-align: center;
+    }
+
+    .section-title{
+        font-size: 2rem;
+    }
+
+             #menu-icon{
+            display: none;
+        }
+
+    nav{
+        font-family: fantasy;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+    }
+
+
+    .nav-upper{
+        min-height: 10vh;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+    
+    }
+
+        .nav_list{
+            transition: var(--transition);
+        }
+
+        .nav_list:hover{
+            text-decoration: overline;
+            color: black;
+        }
+
+        .nav-link {
+            color: white;
+            transition: var(--transition);
+            
+        }
+
+        .nav-link:hover{
+            color: black;
+        }
+
+      
+
+        .nav-lower{
+            min-height: 10vh;
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: bolder;
+        }
+
+        .nav_brand {
+            font-size: 2rem;
+            color: white;
+        }
+
+
+            
+    #box{
+           position: fixed;
+           top: 0px;
+           height: 100%;
+           width: 0%;
+           background-color: black;
+           overflow-x: hidden;
+           text-align: center;
+           transition: 0.5s;
+           padding: 1px 0px;
+          margin-left: -90%;
+           
+            }
+
+            a{
+                margin-top: 100px;
+                display: block;
+                color: white;
+            }
+
+            .been{
+                margin-left: 5px;
+            }
+
+
+            
+        .glow {
+  
+  color: #131212;
+  text-align: center;
+  border: 0px solid;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.logo{
+                color: blue;
+                margin-top: -2px;
+                margin-left: 80%;
+            }
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #c07373, 0 0 20px #f04e4e, 0 0 30px #f00404, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #c98888, 0 0 30px #ff4da6, 0 0 40px #f80808, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+
+      
+        
+
+       
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+
+        }
+
+      
+            
+        .card{
+          
+          display: flex;
+           padding: 20px 35px;
+           background: skyblue;
+           border-radius: 20px;
+           margin: 15px;
+           position: relative;
+           overflow: hidden;
+           text-align: center;
+           margin-top: 5%;
+       }
+
+
+        .pra p{
+            color: black;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+
+        .mar{
+            border: 2px solid black;
+            background-color: gainsboro;
+        }
+
+
+
+
+
+        .container{
+      position: relative;
+      width: 50%;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      background-position: center;
+      overflow: hidden;
+    }
+    .container img{
+      width: 400px;
+      position: absolute;
+      right: 200px;
+    }
+    
+    .home-text{
+      padding: 0 150px;
+    }
+
+   
+    .home-text h1{
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .btnn{
+      padding: 0.6rem 1rem;
+      background: mediumturquoise;
+      color: #000;
+      font-weight: 400;
+      border-radius: 30px 330px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 00.5rem;
+      max-width: 160px;
+      margin-top: -5%;
+    }
+
+   
+
+    .btnn:hover{
+      background: lightblue;
+      transition: 0.2s ease;
+    }
+
+    .swiper-button-next{
+        background: slateblue;
+        background-size: 100% auto;
+        background-position: center;
+        margin-right: 20px;
+        margin-top: -35%;
+       
+    }
+
+    
+    .swiper-button-prev{
+        background: slateblue;
+        background-position: center;
+        margin-right: 20px;
+        margin-top: -35%;
+        
+    }
+
+  
+        .main-btn{
+          margin-left: 40%;
+          margin-top: -10%;
+          background: #c07373;
+          width:100px;
+          height: 30px;
+          cursor: pointer;
+          border-radius: 30px 130px 30px;
+        }
+        .main-btn:hover{
+            background: #000;
+            color: #e60073;
+            
+        }
+
+        
+      
+
+
+         
+
+        </style>
+</head>
+<body>
+
+     
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper
+     flex-space-around">
+     <button type="button" class="been" onclick="on()">&#9776;</button>
+        
+          
+          
+     <div id="box">
+         
+         <li class="nav_list">
+             <a href="egg.html"
+             class="nav_link">Egg</a> 
+         </li>
+       
+
+        
+             <li class="nav_list">
+                 <a href="fruts.html"
+                 class="nav_link">Fruts</a> 
+             </li>
+             
+             
+
+
+
+ <li class="nav_list">
+     <a href="honey.html"
+     class="nav_link">Honey</a> 
+ </li>
+ 
+ 
+
+
+ <br>
+ <br>
+ <button type="button" class="ceen" onclick="of()">of</button>
+ </div>
+
+
+      
+     <div style="text-align: center; margin-top: 10px;">
+        <span class="glow">SPONDON AGRO<i class="fa-brands fa-pagelines" style="color: blue;"></i></span>
+    </div>
+    
+
+        <li class="nav_list">
+          <a href="index.html" 
+          class="nav_link" style="margin-top: -10px;">Home</a>
+      </li>
+
+      <li class="nav_list">
+        <a href="about.html" 
+        class="nav_link" style="margin-top: -10px;">About</a>
+    </li>
+
+    <li class="nav_list">
+      <a href="product.html" 
+      class="nav_link" style="margin-top: -10px;">Product</a>
+  </li>
+
+  <li class="nav_list">
+    <a href="categore.html" 
+    class="nav_link" style="margin-top: -10px;">Categore</a>
+    </li>
+
+    <li class="nav_list">
+      <a href="order.html" 
+      class="nav_link" style="margin-top: -10px;">Order</a>
+  </li>
+    </ul>
+    </nav>
+    
+  <h5 class="card-title text-white" style="margin-top: -1.2%;"><marquee class="mar" style="color: maroon;">Eat Healthy Think Healthy</marquee></h5>
+
+  <a href="#" class="logo">
+    <i class="fa-solid fa-cart-shopping">Chose your product  </i> 
+</a>
+
+    
+
+<section class="home swiper" id="home" style="margin-top: -10%;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide container" style="margin-left: 10%;">
+      <div class="home-text">
+        <h1>Choose Your <br>best Products </h1>
+        <a href="#" class="btnn">Available here:</a>
+      </div>
+      <img src="bringal.jpg">  
+      </div>
+
+      <div class="swiper-slide container" style="margin-left: 20%;">
+        <div class="home-text">
+          <h1>Choose Your<br>best Products </h1>
+          <a href="#" class="btnn">Available here:</a>
+        </div>
+        <img src="baffalo meat.jpg">  
+        </div>
+
+
+        <div class="swiper-slide container" style="margin-left: 30%;">
+          <div class="home-text">
+            <h1>Choose  Your<br>best Products </h1>
+            <a href="#" class="btnn">Available here:</a>
+          </div>
+          <img src="miniket rice.jpg">  
+          </div>
+
+
+          <div class="swiper-slide container" style="margin-left: 20%;">
+            <div class="home-text">
+              <h1>Choose  Your<br>best Products </h1>
+              <a href="#" class="btnn">Available here:</a>
+            </div>
+            <img src="ginger.jpg">  
+            </div>
+
+            <div class="swiper-slide container" style="margin-left: 20%;">
+              <div class="home-text">
+                <h1>Choose  Your<br>best Products</h1>
+                <a href="#" class="btnn">Available here:</a>
+              </div>
+              <img src="pointed gourd.jpg">  
+              </div>
+
+
+              <div class="swiper-slide container" style="margin-left: 20%;">
+                <div class="home-text">
+                  <h1>Choose  Your<br>best Products </h1>
+                  <a href="#" class="btnn">Available here:</a>
+                </div>
+                <img src="vagetable.jpg">  
+                </div>
+
+                <div class="swiper-slide container" style="margin-left: 20%;">
+                  <div class="home-text">
+                    <h1>Choose  Your<br>best Products</h1>
+                    <a href="#" class="btnn">Available here:</a>
+                  </div>
+                  <img src="chicken.jpg">  
+                  </div>
+
+                  <div class="swiper-slide container" style="margin-left: 20%;">
+                    <div class="home-text">
+                      <h1>Choose  Your<br>best Products</h1>
+                      <a href="#" class="btnn">Available here:</a>
+                    </div>
+                    <img src="milk1.jpg">  
+                    </div>
+
+      </div>
+      
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+      
+      
+        <a href="order.html" class="main-btn">Order Now</a>
+        
+    
+    
+  <section>
+
+  <!-- Swiper JS -->
+ 
+
+ 
+  <main>
+      <div class="box">
+          <div class="card">
+            <img src="quinoaaaa.jpg" width="100%" height="500px">
+              <div class="pra">
+                  <p> Quinoa is also naturally gluten-free and can be eaten safely
+                    if one has gluten intolerance such as celiac disease.
+                    Source Of Phosphorus Magnesium Folate Thiamin (Vitamin B1).
+                    Though technically a seed, Quinoa is classified as a whole grain and is 
+                    a good source of plant protein and fiber. One cup cooked provides about 8 grams of
+                     protein,5 grams of fiver.
+                     
+                  </p>
+              </div>
+          </div>
+
+          <div class="card">
+             <img src="chiaaaaaa.jpeg" width="100%" height="300px">
+              <div class="pra">
+                  <p> Chia seeds are high in protein and fiber, both of which have been shown 
+                    to aid weight loss. However, studies on chia seeds and weight loss have provided mixed results.
+                    Additionally, the protein in chia seeds could help reduce appetite and food intake.
+                    Chia seeds may reduce the risk of heart disease, likely due to the fiber and ALA they contain.
+                  </p>
+              </div>
+          </div>
+
+          <div class="card">
+             <img src="ddriceee.jpg" width="100%" height="500px">
+              <div class="pra">
+                  <p> In Bangladesh, it is known as kalo dhaner chaal (black paddy rice)
+                    and used to make polao or rice-based desserts. The bran hull (outermost layer) of black rice
+                     contains one of the highest levels of anthocyanins found in food. 
+                   The grain has a similar amount of fiber to brown rice and like brown rice, has a mild, nutty taste.
+                  
+                  </p>
+              </div>
+          </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+               
+<script>
+
+    function ab(){
+          document.getElementById('a').style.visibility = "visible";
+      }
+    
+    
+         function on(){
+                    document.getElementById('box').style.width = '250px';
+    
+        }
+        
+        function of(){
+            document.getElementById('box').style.width = '0px';
+    
+        }
+
+
+        var swiper = new Swiper(".home", {
+      spaceBetween: 30,
+      centeredSlides: true,
+     
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+</body>
+</html>

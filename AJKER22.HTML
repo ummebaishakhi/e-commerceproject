@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://kit.fontawesome.com/91969a903e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/91969a903e.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+ <script src="js/script.js"></script>
+    <style>
+
+       .navbar{
+            position: sticky;
+            top: 0px;
+           
+        }
+
+        .nav-link{
+            color: black;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: -4px;
+            
+        }
+
+
+        .nav-link:hover{
+            color: white;
+            background-color: black;
+        }
+
+        .navbar-brand{
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: -10px;
+        }
+
+        .btn1{
+            background-color: lawngreen;
+            width: 5rem;
+            border-radius: 15px;
+            margin-left: 20%;
+        }
+
+        
+        .btn1:hover{
+            transform: scale(1.2);
+        }
+
+
+        .glow {
+  
+  color: #131212;
+  text-align: center;
+  border: 0px solid;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #c07373, 0 0 20px #f04e4e, 0 0 30px #f00404, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #c98888, 0 0 30px #ff4da6, 0 0 40px #f80808, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+        
+
+
+    #box{
+           position: fixed;
+           top: 0px;
+           height: 100%;
+           width: 0%;
+           background-color: black;
+           overflow-x: hidden;
+           text-align: center;
+           transition: 0.5s;
+           padding: 1px 0px;
+          
+           
+            }
+
+            a{
+                margin-top: 100px;
+                display: block;
+                color: white;
+                
+
+
+            }
+
+            .been{
+                margin-left: 5px;
+            }
+
+           
+            .logo{
+                color: blue;
+                margin-top: -2px;
+                margin-left: 80%;
+            }
+
+            .mar{
+                color: brown;
+                border: 2px solid black;
+                background-color: cadetblue;
+            }
+
+            
+
+          
+
+
+
+        #contact img{
+        height: 100%;
+    }
+
+    .box{
+        width: 80% !important;
+        margin-top: 10px;
+       background: red;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact input{
+        margin: 10px 0px;
+    }
+
+    #contact textarea{
+        margin: 10px 0px;
+
+    }
+
+    btn singin{
+        background-color: green;
+    }
+
+
+ </style>
+
+          
+
+
+
+
+     
+    </style>
+</head>
+<body>
+    <div class="card">
+    <nav class="navbar navbar-expand-lg text-uppercase bg-warning" id="navbar">
+        <button type="button" class="been" onclick="on()">&#9776;</button>
+        
+          
+          
+        <div id="box">
+            <div class="pagination" style="justify-content: center;">
+            <li class="page-item">
+                <a href="http://127.0.0.1:5500/AJKER777EGG.HTML">Egg</a> 
+            </li>
+            </div>
+
+            <div class="pagination" style="justify-content: center;">
+                <li class="page-item">
+                    <a href="http://127.0.0.1:5500/AJKER888FRUTS.HTML">Fruts</a> 
+                </li>
+                
+                </div>
+   
+  
+
+   <div class="pagination" style="justify-content: center;">
+    <li class="page-item">
+        <a href="http://127.0.0.1:5500/AJKER%20PRO%20HONEY.HTML">Honey</a> 
+    </li>
+    
+    </div>
+   
+
+    <br>
+    <br>
+    <button type="button" class="ceen" onclick="of()">of</button>
+    </div>
+
+
+
+        <div class="container">
+          
+          
+          
+            <div style="text-align: center; margin-top: 10px;">
+                <span class="glow">Spondon Agro<i class="fa-brands fa-pagelines"></i></span>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navberNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navberNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active px-lg-4 rounded" href="#">Home</a>
+                <a class="nav-link px-lg-4 rounded" href="#">About</a>
+                
+                    <a class="nav-link px-lg-4 rounded" href="#">Products</a>
+                  
+                   
+                <div class="pagination" style="justify-content: center;">
+                <li class="page-item">
+                    <a class="nav-link px-lg-4 rounded" href="http://127.0.0.1:5500/spondon%20our%20product.html">Categoe</a>
+                </li>
+                </div>
+
+                    
+                <div class="pagination" style="justify-content: center;">
+                    <li class="page-item">
+                        <a class="nav-link px-lg-4 rounded" href="http://127.0.0.1:5500/AJKER%20ORDER.HTML">Order</a>
+                    </li>
+                    </div>
+               
+            </div>
+        </div>
+        <button type="button" class="btn1 p-2 my-lg-0 my-2">login</button>
+        </div>
+    </nav>
+
+    <h5 class="card-title bg-info text-white"><marquee>Eat Healthy Think Healthy</marquee></h5>
+
+    <a href="#" class="logo">
+        <i class="fa-solid fa-cart-shopping">Chose your product  </i> 
+    </a>
+
+
+
+
+
+    
+    <div class="card-body">
+        <img src="Organic-Food.jpg" height="50%" width="100%">
+         Organic foods include fresh produce, meats, and dairy products as well as processed foods such 
+        as crackers, drinks, and frozen meals. The market for organic food has grown significantly since the late 20th century, becoming a
+         multibillion dollar industry with distinct production, processing, distribution, and retail systems.
+         A regulatory framework is most important when consumers and farmers are geographically separated,
+          and such a framework is likely to cater to larger-scale producers who participate in a more industrial 
+          system. This regulatory approach does not necessarily match consumers assumptions about organic food
+           production, which typically include images of small family farms and the humane treatment of animals. In general, regulations surrounding organic food do not address more complex social concerns about family farms, farmworker
+          wages, or farm size, and organic policy in some places does little to address animal welfare.
+          
+          <div class="row text-center">
+            <div class="col-6"> <h1>Order your daily fresh items</h1></div>
+           
+            <div class="col-6"> <h1>Popular  items</h1></div>
+            
+            
+
+          </div>
+         
+          <div class="cat">
+           
+            <div class="cat-left"><img src="orf.jpg" style="width:100%"></div>
+
+            <div class="cat-right"> <img src="catpic2.jpg" style="width:100%"></div>
+
+            
+               <div class="btn-group ">
+              <button type="button"  class="btn btn-warning" data-toggle="dropdown"><a class=" pa nav-link">Category
+                  <span class="badge badge-danger">&#x2193;</span></a>
+              </button>
+                  <div class="dropdown-menu">
+                    
+                      <a href= # class="dropdown-item">Vegetable</a>
+                      <a href=# class="dropdown-item">Fruit</a>
+                      <a href=# class="dropdown-item">Poultry</a>
+                      <a href=# class="dropdown-item">Meat</a>
+                      <a href=# class="dropdown-item">Dairy</a>
+                      <a href=# class="dropdown-item">Others</a>
+                      
+                      
+                  </div>
+                 
+             </div>
+                
+             
+                
+                
+            </div>
+
+            
+               <div class="container text-center">
+              <h1 >Common Questions
+              
+              </h1>
+              <h6 >01.How much do delivery cost?</h6>
+              <h6 >02.What are your delivery hours?</h6>
+              <h6 >03.What is policy on refunds?</h6>
+              <h6 >04.How can we purchase items?</h6>
+            </div>
+              <div class="alert alert-warning" style="visibility: hidden;" id="a">
+                  <a href="#" class="alert-link">  <table class="table table-bordered">
+                      <thead>
+                        <tr><h6>1.ans:</h6>
+                          <th><h6>Orders bellow 500</h6></th>
+                          <th><h6>Orders above 500</h6></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><h6>50bdt</h6></td>
+                          <td><h6>40bdt</h6></td>
+                          
+                        </tr>
+                        
+                        
+                      </tbody>
+                    </table><h6>2.ans:
+                    You can exchange product within 72hours.</h6>
+                    
+                    <h6>3.ans: Our delivery time is from 9.00a.m to 5.00p.m.<br>
+                      liquid items are not refundable.</h6>
+                      
+
+                      <h6>4.ans:Our service is full cash on delivery.</h6><br>
+                       
+                  </a>
+              </div>
+              
+              <div class="a text-center">
+                <h6>Click here for answer</h6>
+                <button type="button" class="btn btn-outline-primary" onclick="ab()">click</button>
+            </div>
+              
+          </div>
+
+
+          
+        <marquee class="mar"><b>Newly added products. Take a look. Add to your cart.Try now!!!</b></b></marquee>
+
+
+
+
+        <div class="row" >
+           <div class="col-4 bg-info "  style="border: 3px solid"><img src="chiaaaaaa.jpeg"  width="100%" height="400px">
+             Chia seeds are high in protein and fiber, both of which have been shown 
+             to aid weight loss. However, studies on chia seeds and weight loss have provided mixed results.
+             Additionally, the protein in chia seeds could help reduce appetite and food intake.
+             Chia seeds may reduce the risk of heart disease, likely due to the fiber and ALA they contain.
+           </h6>
+             
+         </div>
+           <div class="col-4 bg-warning "  style="border: 3px solid"><img src="quinoaaaa.jpg"  width="100%" height="400px">
+             Quinoa is also naturally gluten-free and can be eaten safely
+              if one has gluten intolerance such as celiac disease.
+              Source Of Phosphorus Magnesium Folate Thiamin (Vitamin B1).
+              Though technically a seed, Quinoa is classified as a whole grain and is 
+              a good source of plant protein and fiber. One cup cooked provides about 8 grams of
+               protein,5 grams of fiver.
+               
+             </div>
+              
+              <div class="col-4 bg-info"  style="border: 3px solid"><img src="ddriceee.jpg"  width="100%" height="400px">
+                In Bangladesh, it is known as kalo dhaner chaal (black paddy rice)
+              and used to make polao or rice-based desserts. The bran hull (outermost layer) of black rice
+               contains one of the highest levels of anthocyanins found in food. 
+             The grain has a similar amount of fiber to brown rice and like brown rice, has a mild, nutty taste.
+            
+
+           
+               </div>
+          </div>
+          </div>
+
+             
+        
+
+         
+                
+          <section id="contact">
+            <div class="container box">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <img src="contact us.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h1>Contact us</h1>
+                        <form class="mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                            <input type="email" class="form-control" placeholder="Enter your mail">
+                            <textarea class="form-control" placeholder="Enter your massage"></textarea>
+                            <button type="button bg-warning" class="btn singin">Send Massage</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          
+                       
+              
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function ab(){
+      document.getElementById('a').style.visibility = "visible";
+  }
+
+
+     function on(){
+                document.getElementById('box').style.width = '250px';
+
+    }
+    
+    function of(){
+        document.getElementById('box').style.width = '0px';
+
+    }
+</script>
+  
+
+
+</body>
+</html>

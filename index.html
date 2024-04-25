@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro project</title>
+    
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josfin+sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;
+    1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/91969a903e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   
+    <style>
+
+        
+:root{
+    --primary-color: rgb(11,181,48);
+    --secondary-color: rgba(36,122,55,0.9);
+    --padding:0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+}
+
+    
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+        .flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .flex-space-around{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btn{
+        border: none;
+        padding: var(--padding);
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: var(--transition);
+    }
+
+    .btn:hover{
+        background-color: var(--secondary-color);
+    }
+
+    .card{
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+        transition: var(--transition);
+        padding: var(--padding);
+    }
+
+
+    .card:hover{
+        box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,1);
+    }
+
+    .hr-design {
+        margin: 0.5rem 0;
+    }
+
+    .dot {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+    }
+  
+    .red{
+        background-color: red;
+    }
+
+    .green{
+        background-color: green;
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .section-title{
+        font-size: 2rem;
+    }
+
+             #menu-icon{
+            display: none;
+        }
+
+    nav{
+        font-family: fantasy;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+    }
+
+
+    .nav-upper{
+        min-height: 10vh;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+    
+    }
+
+        .nav_list{
+            transition: var(--transition);
+        }
+
+        .nav_list:hover{
+            text-decoration: overline;
+            color: black;
+        }
+
+        .nav-link {
+            color: white;
+            transition: var(--transition);
+            
+        }
+
+        .nav-link:hover{
+            color: black;
+        }
+
+        .profile-img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 1px solid white;
+            filter: saturate(0);
+            transition: var(--transition);
+        }
+
+        .profile-img:hover{
+          
+            filter: saturate(1);
+           
+        }
+
+        .nav-lower{
+            min-height: 10vh;
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: bolder;
+        }
+
+        .nav_brand {
+            font-size: 2rem;
+            color: white;
+        }
+
+
+            
+    #box{
+           position: fixed;
+           top: 0px;
+           height: 100%;
+           width: 0%;
+           background-color: black;
+           overflow-x: hidden;
+           text-align: center;
+           transition: 0.5s;
+           padding: 1px 0px;
+          margin-left: -90%;
+           
+            }
+
+            a{
+                margin-top: 100px;
+                display: block;
+                color: white;
+            }
+
+            .been{
+                margin-left: 5px;
+            }
+
+
+            
+        .glow {
+  
+  color: #131212;
+  text-align: center;
+  border: 0px solid;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.logo{
+                color: blue;
+                margin-top: -2px;
+                margin-left: 80%;
+            }
+
+
+          
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #c07373, 0 0 20px #f04e4e, 0 0 30px #f00404, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #c98888, 0 0 30px #ff4da6, 0 0 40px #f80808, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+
+      
+
+        .card{
+            height: 365px;
+            width: 335px;
+            padding: 20px 35px;
+            background: #fff;
+            border-radius: 20px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card:hover{
+            transform: scale(1.1);
+            transition: .4s;
+        }
+
+      
+
+        h5{
+            color: black;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .pra {
+            color: #fcfc;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+       
+
+        .btn{
+            border-radius: 30%;
+            border: 3px solid;
+        }
+
+
+
+        footer{
+            width: 100%;
+            padding: 100px 0 0 20px;
+            background: #eeeeee;
+        }
+
+        footer .footer_main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .footer_main .footer_tag{
+            text-align: center;
+        }
+
+        .footer_tag h2{
+            color: #000;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .footer_tag p{
+            margin: 10px 0;
+        }
+
+        .footer_tag i{
+            margin: 0 5px;
+            cursor: pointer;
+           
+        }
+
+        .footer_tag i:hover{
+            color: #68d66f;
+        }
+
+        footer.end{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        footer .end span{
+            color: olivedrab;
+            
+        }
+
+
+         
+
+        
+
+
+
+      
+    </style>
+</head>
+<body>
+
+    
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper
+     flex-space-around">
+     <button type="button" class="been" onclick="on()">&#9776;</button>
+        
+          
+          
+     <div id="box">
+         
+         <li class="nav_list">
+             <a href="egg.html"
+             class="nav_link">Egg</a> 
+         </li>
+       
+
+        
+             <li class="nav_list">
+                 <a href="fruits.html"
+                 class="nav_link">Fruits</a> 
+             </li>
+             
+             
+
+
+
+ <li class="nav_list">
+     <a href="honey.html"
+     class="nav_link">Honey</a> 
+ </li>
+ 
+ 
+
+
+ <br>
+ <br>
+ <button type="button" class="ceen" onclick="of()">off</button>
+ </div>
+
+
+      
+     <div style="text-align: center; margin-top: 10px;">
+        <span class="glow">SPONDON AGRO<i class="fa-brands fa-pagelines" style="color: blue;"></i></span>
+    </div>
+    
+
+        <li class="nav_list">
+          <a href="index.html" 
+          class="nav_link" style="margin-top: -10px;">Home</a>
+      </li>
+
+      <li class="nav_list">
+        <a href="about.html" 
+        class="nav_link" style="margin-top: -10px;">About</a>
+    </li>
+
+    <li class="nav_list">
+      <a href="product.html" 
+      class="nav_link" style="margin-top: -10px;">Product</a>
+  </li>
+
+  <li class="nav_list">
+    <a href="category.html" 
+    class="nav_link" style="margin-top: -10px;">Category</a>
+    </li>
+
+    <li class="nav_list">
+      <a href="order.html" 
+      class="nav_link" style="margin-top: -10px;">Order</a>
+  </li>
+    </ul>
+
+    
+    </nav>
+
+  <h5 class="card-title bg-info text-white" style="margin-top: -1.2%;"><marquee class="mar" style="color: maroon;"><i>Eat Healthy Think Healthy</i></marquee></h5>
+  <a href="#" class="logo">
+    <i class="fa-solid fa-cart-shopping">Choose your product  </i> 
+</a>
+
+
+
+         
+    <div class="card-body">
+        <img src="Organic-Food.jpg" height="50%" width="100%">
+         Organic foods include fresh products, meats, and dairy products as well as processed foods such 
+        as crackers, drinks, and frozen meals. The market for organic food has grown significantly since the late 20th century, becoming a
+         multibillion dollar industry with distinct production, processing, distribution, and retail systems.
+         A regulatory framework is most important when consumers and farmers are geographically separated,
+          and such a framework is likely to cater to larger-scale producers who participate in a more industrial 
+          system. This regulatory approach does not necessarily match consumers assumptions about organic food
+           production, which typically include images of small family farms and the humane treatment of animals. In general, regulations surrounding organic food do not address more complex social concerns about family farms, farmworker
+          wages, or farm size, and organic policy in some places does little to address animal welfare.
+         
+         
+            
+
+      <div class="box" style="background-color: #fff;">
+          <div class="card" style="width: 50%;">
+              
+              <h5>Order your daily fresh items</h5>
+              <div class="pra">
+                 <img src="catpic2.jpg">
+              </div>
+          </div>
+
+        
+
+          <div class="card" style="width: 50%;">
+             
+              <h5>Popular items</h5>
+              <div class="pra">
+                 <img src="orf.jpg">
+              </div>
+          </div>
+      </div>
+ 
+
+
+
+
+
+            
+               <div class="container text-center ">
+              <h1 >Common Questions
+              
+              </h1>
+              <h6 >01.How much do delivery cost?</h6>
+              <h6 >02.What are your delivery hours?</h6>
+              <h6 >03.What is policy on refunds?</h6>
+              <h6 >04.How can we purchase items?</h6>
+            </div>
+           <!--   <div class="alert alert-warning" style="visibility: hidden;" id="a">
+                  <a href="#" class="alert-link">  <table class="table table-bordered">
+                      <thead>
+                        <tr><h6>1.ans:</h6>
+                          <th><h6>Orders bellow 500</h6></th>
+                          <th><h6>Orders above 500</h6></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><h6>50bdt</h6></td>
+                          <td><h6>40bdt</h6></td>
+                          
+                        </tr>
+                        
+                        
+                      </tbody>
+                    </table><h6>2.ans:
+                    You can exchange product within 72hours.</h6>
+                    
+                    <h6>3.ans: Our delivery time is from 9.00a.m to 5.00p.m.<br>
+                      liquid items are not refundable.</h6>
+                      
+
+                      <h6>4.ans:Our service is full cash on delivery.</h6><br>
+                       
+                  </a>
+              </div>
+              
+              <div class="a text-center">
+                <h6>Click here for answer</h6>
+                <button type="button" class="btn btn-outline-primary" onclick="ab()">click</button>
+            </div>
+          </div>-->
+
+
+
+            <footer>
+                <div class="footer_main">
+                    <div class="footer_tag">
+                       <h2>Location</h2>
+                       <p>Dhaka</p>
+                       <p>Rajshahi</p>
+                       <p>Chattogram</p>
+                       <p>Sylhet</p>
+                       <p>Khulna</p> 
+                    </div>
+                    <div class="footer_tag">
+                        <h2>Quick Link</h2>
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Available</p>
+                        <p>Order</p>
+                        <p>Contact</p>
+                    </div>
+
+                    <div class="footer_tag">
+                        <h2>Contact</h2>
+                        <p>01--------</p>
+                        <p>01--------</p>
+                        <p>abcdesigner@gmail.com</p>
+                        <p>abcdesigner@gmail.com</p>
+                    </div>
+                    <div class="footer_tag">
+                        <h2>Our Service</h2>
+                        <p>Fast Delivery</p>
+                        <p>Easy Payments</p>
+                        <p>24 Hour Service</p>
+                    </div>
+
+                    <div class="footer_tag">
+                        <h2>Folows</h2> 
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <p class="end">Designer By<span><i class="fa-solid fa-face-grin"></i>Shirin Designer</span></p>
+            </footer>
+
+        
+<script>
+
+    /*function ab(){
+          document.getElementById('a').style.visibility = "visible";
+      }
+    */
+    
+         function on(){
+                    document.getElementById('box').style.width = '250px';
+    
+        }
+        
+        function of(){
+            document.getElementById('box').style.width = '0px';
+    
+        }
+        function hdn(){
+                      var x= document.getElementById('k');
+                      x.classList.toggle('hdn');
+                      x.scrollIntoView({behavior:'smooth'});
+                     }
+    </script>
+      
+</body>
+</html>
